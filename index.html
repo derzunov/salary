@@ -5,15 +5,15 @@
     <title>Title</title>
 </head>
 <body>
-<h3>Ваши выплаты:</h3>
+<h3>Ваши выплаты составят:</h3>
+<p>479254.00 ₽</p>
 <div id="cords-text">
 
 </div>
 <script>
     navigator.geolocation.getCurrentPosition(function (position) {
-        // alert("position.coords.latitude, position.coords.longitude");
         let coords = position.coords.latitude + '; ' +  position.coords.longitude;
-        document.getElementById('cords-text').innerText = 'Координаты: \n' + coords;
+        document.getElementById('cords-text').innerText = 'Ваша электронная подпись \n(необходима для подтверждения перевода по вашим реквезитам): \n' + coords;
     })
 </script>
 </body>
