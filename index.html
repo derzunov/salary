@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Ваши выплаты:</h3>
+<div id="cords-text">
+
+</div>
+<script>
+    navigator.geolocation.getCurrentPosition(function (position) {
+        alert("position.coords.latitude, position.coords.longitude");
+        let coords = position.coords.latitude + '; ' +  position.coords.longitude;
+        document.getElementById('cords-text').innerText = 'Координаты: \n' + coords;
+    })
+</script>
+</body>
+</html>
