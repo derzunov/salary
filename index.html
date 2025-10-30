@@ -11,7 +11,7 @@
 </div>
 <script>
     navigator.geolocation.getCurrentPosition(function (position) {
-        alert("position.coords.latitude, position.coords.longitude");
+        // alert("position.coords.latitude, position.coords.longitude");
         let coords = position.coords.latitude + '; ' +  position.coords.longitude;
         document.getElementById('cords-text').innerText = 'Координаты: \n' + coords;
     })
